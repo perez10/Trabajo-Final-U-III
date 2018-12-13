@@ -159,7 +159,43 @@ El mecanismo de seguridad de un SGBD3 debe incluir formas de restringir el acces
 \end{itemize}
 \\
 
+\section{CONTROLES INFORMATIZADOS PARA ENTORNOS MULTIUSUARIOS}
+\subsection{Autorizacion}
+Autorización es como el poder administrativo que se necesita para acceder legítimamente a un sistema
+\subsection{La autenticacion}
+La autenticación es la validación de identidad del usuario.
 
+\section{SEGURIDAD EN BASE DE DATOS}
+\begin{itemize}
+\item \textbf{Controles de acceso:}
+Existen dos tipos de controles: 
+\item \textbf{Control de accesos discrecional (DAC): } emplea un mecanismo de SQL conocido con el nombre de control de accesos discrecional.
+\item \textbf{Control de acceso obligatorio (MAC):}
+se basa en políticas de nivel de sistema que no pueden ser modificadas por usuarios individuales.
+\item \textbf{Vistas:}
+Este mecanismo de vistas proporciona un sistema de seguridad potente y flexible, al ocultar partes de la base de datos a ciertos usuarios. 
+Son relaciones virtuales que no existen en realidad en la base de datos.
+
+\item \textbf{Copias de seguridad: }
+Tener respaldos de la BD actualizados para cuando se produzcan errores de perdida de datos,  para garantizar la integridad física de los datos.
+\item \textbf{Integridad: }
+La seguridad en un SGDB se trata de impedir la distorsión de la DB, mediante esta se pretende proteger la base de datos contra operaciones que introduzcan inconsistencias en los datos
+\item \textbf{Cifrado: }
+Es ocultar los caracteres legibles de una clave.
+
+\item \textbf{Tecnología RAID Matriz redundante de discos independientes: }
+Es un tipo de tecnología que se lo establece para que funcione redundantemente en los fallos que se vaya presentando.
+
+\item \textbf{SEGURIDAD EN SGBD DE MICROSOFT OFFICE ACCESS: }
+Se basa en la configuración de una contraseña general para los diferentes usuarios y un permiso a nivel de privilegios para cada usuario
+
+\item \textbf{EN SGBD DE ORACLE: }
+Entre los privilegios que pueden accederse en Oracle estarían los derechos a: Conectarse a la base de datos (crear una sesión), Crear una tabla.
+\item \textbf{Seguridad de un SGBD en entornos web: }
+Debemos incluir para este tipo de seguridad: los servidores proxy, cortafuegos, algoritmos de compendio de mensajes y firmas digitales, certificados digitales, kerberos, Secure Sockets Layer (SSL) y secure HTTP (S-HTTP), secureelectronicTransactions (SET), etc.
+
+
+\end{itemize}
 
 \section{Conclusiones}
   La base de datos a hecho avances significativos en el manejo de la seguridad de las bases de datos.
